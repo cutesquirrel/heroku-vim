@@ -21,7 +21,8 @@ curl https://s3.amazonaws.com/heroku-vim/vim-7.3.tar.gz --location --silent | ta
 export PATH=$PATH:/app/vim/bin
 ln -s /app/vim/bin/vim /app/vim/bin/vi
 printf "set nocompatible\nset backspace=2" > ~/.vimrc
-alias l='ls -alh'
+
+printf "alias l='ls -alh'" >> ~/.bashrc
 
 bash
     CMD
